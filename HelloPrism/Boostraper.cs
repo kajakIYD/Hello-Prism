@@ -24,7 +24,7 @@ namespace HelloPrism
             Application.Current.MainWindow = (Window)this.Shell;
             Application.Current.MainWindow.Show();
         }
-
+        //Configure module catalog, add modules (other projects from solution) 
         protected override void ConfigureModuleCatalog()
         {
             base.ConfigureModuleCatalog();
