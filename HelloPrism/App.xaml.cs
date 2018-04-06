@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
+
 namespace HelloPrism
 {
     /// <summary>
@@ -13,5 +14,11 @@ namespace HelloPrism
     /// </summary>
     public partial class App : Application
     {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
+            HelloPrism.Boostraper bootstrapper = new HelloPrism.Boostraper();
+            bootstrapper.Run();
+        }
     }
 }

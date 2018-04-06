@@ -1,0 +1,20 @@
+﻿<Window x:Class="HelloPrism.Shell"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelloPrism"
+        mc:Ignorable="d"
+        xmlns:prism="http://www.codeplex.com/prism"
+        Title="Hello World" Height="300" Width="300">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ItemsControl Grid.Row="0" Name="MainRegion" prism:RegionManager.RegionName="MainRegion" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <ItemsControl Grid.Row="1" Name="LowerRegion" prism:RegionManager.RegionName="LowerRegion" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    </Grid>
+
+</Window>
